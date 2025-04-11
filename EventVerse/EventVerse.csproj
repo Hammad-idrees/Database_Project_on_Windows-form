@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1EEFAEF-93A0-4116-93AA-FCAD12A82B58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EventVerse</RootNamespace>
+    <AssemblyName>EventVerse</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardForm.Designer.cs">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFeedback.Designer.cs">
+      <DependentUpon>AdminFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginForm.Designer.cs">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegisterForm.Designer.cs">
+      <DependentUpon>AdminRegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeDashboardForm.Designer.cs">
+      <DependentUpon>AttendeeDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeLoginForm.Designer.cs">
+      <DependentUpon>AttendeeLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeRegistrationForm.Designer.cs">
+      <DependentUpon>AttendeeRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComplaintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComplaintForm.Designer.cs">
+      <DependentUpon>ComplaintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventBookingForm.Designer.cs">
+      <DependentUpon>EventBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsApprovalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsApprovalForm.Designer.cs">
+      <DependentUpon>EventsApprovalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventSearchForm.Designer.cs">
+      <DependentUpon>EventSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventVerseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventVerseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventVerseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventVerseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventVerseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventVerseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventVerseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventVerseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventVerseDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventVerseDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventVerseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventVerseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackForm.Designer.cs">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyEventsForm.Designer.cs">
+      <DependentUpon>MyEventsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileForm.Designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleSelectionForm.Designer.cs">
+      <DependentUpon>RoleSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagementForm.Designer.cs">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminDashboardForm.resx">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFeedback.resx">
+      <DependentUpon>AdminFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegisterForm.resx">
+      <DependentUpon>AdminRegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeDashboardForm.resx">
+      <DependentUpon>AttendeeDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeLoginForm.resx">
+      <DependentUpon>AttendeeLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeRegistrationForm.resx">
+      <DependentUpon>AttendeeRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComplaintForm.resx">
+      <DependentUpon>ComplaintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventBookingForm.resx">
+      <DependentUpon>EventBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsApprovalForm.resx">
+      <DependentUpon>EventsApprovalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventSearchForm.resx">
+      <DependentUpon>EventSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyEventsForm.resx">
+      <DependentUpon>MyEventsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleSelectionForm.resx">
+      <DependentUpon>RoleSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagementForm.resx">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EventVerseDataSet.xsc">
+      <DependentUpon>EventVerseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventVerseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventVerseDataSet.xss">
+      <DependentUpon>EventVerseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet1.xsc">
+      <DependentUpon>EventVerseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventVerseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventVerseDataSet1.xss">
+      <DependentUpon>EventVerseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet2.xsc">
+      <DependentUpon>EventVerseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventVerseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventVerseDataSet2.xss">
+      <DependentUpon>EventVerseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet3.xsc">
+      <DependentUpon>EventVerseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventVerseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventVerseDataSet3.xss">
+      <DependentUpon>EventVerseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet41.xsc">
+      <DependentUpon>EventVerseDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventVerseDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventVerseDataSet41.xss">
+      <DependentUpon>EventVerseDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet5.xsc">
+      <DependentUpon>EventVerseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EventVerseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventVerseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventVerseDataSet5.xss">
+      <DependentUpon>EventVerseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alvaro-reyes-qWwpHwip31M-unsplash %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
